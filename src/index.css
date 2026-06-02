@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@fontsource/poppins";
+
+@theme inline {
+    --font-sans: "Poppins", sans-serif;
+    --font-heading: var(--font-sans);
+}
+
+@layer base {
+    html {
+        @apply font-sans;
+    }
+}
