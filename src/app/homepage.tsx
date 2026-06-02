@@ -1,9 +1,15 @@
+import { Footer } from "../features/footer/components";
+import { Header } from "../features/header/components";
+import { HeroSection } from "../features/hero-section/components";
+
 export default function Homepage() {
   return (
-    <div>
+    <>
+      <Header />
       <main>
-        <h1 className="text-4xl">Homepage</h1>
+        <HeroSection />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
