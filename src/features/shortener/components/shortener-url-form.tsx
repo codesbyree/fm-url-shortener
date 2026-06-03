@@ -80,7 +80,7 @@ export default function ShortenerForm() {
               Input url
             </label>
 
-            <Input className={cn(hasErrorMessage)} placeholder="Shorten a link here..." onChange={handleChange} />
+            <Input value={url} className={cn(hasErrorMessage)} placeholder="Shorten a link here..." onChange={handleChange} />
 
             <InputErrorMessage className={cn("static lg:absolute -bottom-6", hasErrorMessage ? "block" : "hidden")}>{errorMessage}</InputErrorMessage>
           </div>
