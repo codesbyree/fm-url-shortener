@@ -3,7 +3,6 @@ import { cn } from "../../../utils/cn.utils";
 import type { ComponentPropsWithoutRef } from "react";
 import type { ShortenUrl } from "../types/shortener.types";
 
-import Button from "../../../components/ui/button";
 import CopyButton from "./copy-button";
 
 interface Props extends ComponentPropsWithoutRef<"article"> {
