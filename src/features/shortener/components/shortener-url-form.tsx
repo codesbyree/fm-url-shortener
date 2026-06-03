@@ -69,37 +69,35 @@ export default function ShortenerForm() {
   const hasErrorMessage = Boolean(errorMessage.length);
 
   return (
-    <section>
-      <div className="p-4 px-6 lg:px-0 lg:max-w-4xl xl:max-w-5xl">
-        <form
-          onSubmit={handleSubmit}
-          className="p-6 rounded-xl bg-[url(/bg-shorten-mobile.svg)] lg:bg-[url(/bg-shorten-desktop.svg)] bg-purple-950 bg-no-repeat bg-top-right lg:bg-cover lg:p-16 lg:py-12 flex flex-col lg:flex-row lg:gap-6"
-        >
-          <div className="mb-4 space-y-2 w-full lg:mb-0 lg:space-y-0 relative">
-            <label htmlFor="input-url" className="sr-only">
-              Input url
-            </label>
+    <section id="shortened-url-form">
+      <form
+        onSubmit={handleSubmit}
+        className="p-6 rounded-xl bg-[url(/bg-shorten-mobile.svg)] lg:bg-[url(/bg-shorten-desktop.svg)] bg-purple-950 bg-no-repeat bg-top-right lg:bg-cover lg:p-16 lg:py-12 flex flex-col lg:flex-row lg:gap-6"
+      >
+        <div className="mb-4 space-y-2 w-full lg:mb-0 lg:space-y-0 relative">
+          <label htmlFor="input-url" className="sr-only">
+            Input url
+          </label>
 
-            <Input value={url} className={cn(hasErrorMessage)} placeholder="Shorten a link here..." onChange={handleChange} />
+          <Input value={url} className={cn(hasErrorMessage)} placeholder="Shorten a link here..." onChange={handleChange} />
 
-            <InputErrorMessage className={cn("static lg:absolute -bottom-6", hasErrorMessage ? "block" : "hidden")}>{errorMessage}</InputErrorMessage>
-          </div>
+          <InputErrorMessage className={cn("static lg:absolute -bottom-6", hasErrorMessage ? "block" : "hidden")}>{errorMessage}</InputErrorMessage>
+        </div>
 
-          <Button disabled={hasErrorMessage} className="rounded-md lg:h-max lg:max-w-30 w-full">
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={loading ? "processing" : "shorten"}
-                initial={{ y: 10, opacity: 0, filter: "blur(8px)" }}
-                animate={{ y: 0, opacity: 1, filter: "blur(0px)" }} // Fixed opacity: 100 -> 1
-                exit={{ y: -8, opacity: 0, filter: "blur(8px)" }} // Added matching blur on exit
-                transition={{ duration: 0.2 }}
-              >
-                {loading ? "Processing" : "Shorten It!"}
-              </motion.span>
-            </AnimatePresence>
-          </Button>
-        </form>
-      </div>
+        <Button disabled={hasErrorMessage} className="rounded-md lg:h-max lg:max-w-30 w-full">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={loading ? "processing" : "shorten"}
+              initial={{ y: 10, opacity: 0, filter: "blur(8px)" }}
+              animate={{ y: 0, opacity: 1, filter: "blur(0px)" }} // Fixed opacity: 100 -> 1
+              exit={{ y: -8, opacity: 0, filter: "blur(8px)" }} // Added matching blur on exit
+              transition={{ duration: 0.2 }}
+            >
+              {loading ? "Processing" : "Shorten It!"}
+            </motion.span>
+          </AnimatePresence>
+        </Button>
+      </form>
     </section>
   );
 }
