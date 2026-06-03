@@ -24,8 +24,8 @@ export default function Navigation() {
 
       <div
         className={cn(
-          "fixed left-0 p-6 w-full h-full top-30 transition-all blur-sm opacity-0 pointer-events-none duration-300 lg:static lg:top-0! lg:blur-none! lg:opacity-100! lg:p-0 lg:pointer-events-auto!",
-          isVisible && "top-16 blur-none opacity-100 pointer-events-auto",
+          "fixed left-0 p-6 w-full h-full top-30 transition-all blur-sm opacity-0 pointer-events-none duration-300 lg:static lg:top-0! lg:blur-none! lg:opacity-100! lg:p-0 lg:pointer-events-auto! z-100",
+          isVisible && "top-14 blur-none opacity-100 pointer-events-auto",
         )}
       >
         <div className="bg-purple-950 p-6 rounded-xl w-full flex flex-col gap-3 pb-10 relative z-20 lg:p-0 lg:bg-transparent transition-colors lg:flex-row">
