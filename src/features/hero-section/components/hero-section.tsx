@@ -4,8 +4,8 @@ import ilustrationWorking from "../../../assets/images/illustration-working.svg"
 
 export default function HeroSection() {
   return (
-    <section id="hero-section" className="lg:overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:max-w-4xl xl:max-w-5xl lg:mx-auto lg:py-8">
+    <section id="hero-section" className="lg:overflow-hidden relative">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:max-w-4xl xl:max-w-5xl lg:mx-auto lg:py-8 pb-10 lg:pb-12">
         <div className="p-4 flex flex-col items-center row-start-2 lg:row-start-1 lg:p-0 lg:items-start lg:justify-center">
           <h1 className="font-bold text-gray-900 text-4xl text-center mb-3 lg:text-left lg:text-5xl lg:leading-14 xl:text-6xl xl:leading-17">
             More than just <br className="lg:block hidden" /> shorter links
