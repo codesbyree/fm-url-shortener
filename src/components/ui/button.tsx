@@ -7,7 +7,10 @@ export default function Button(props: ComponentPropsWithoutRef<"button">) {
   return (
     <button
       onClick={onClick}
-      className={cn("flex gap-4 items-center bg-blue-400 text-center rounded-full text-white justify-center h-9 px-4 w-full text-nowrap hover:opacity-80 transition-all cursor-pointer", className)}
+      className={cn(
+        "flex gap-4 items-center bg-blue-400 text-center rounded-full text-white justify-center h-auto py-3 px-6 w-full text-nowrap hover:opacity-80 transition-all cursor-pointer font-semibold disabled:opacity-70",
+        className,
+      )}
       disabled={disabled}
       {...rest}
     >
