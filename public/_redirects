@@ -1,0 +1,2 @@
+# src/public/_redirects
+/api/* https://cleanuri.com/api/:splat  200
