@@ -73,7 +73,7 @@ export default function ShortenerForm() {
       <div className="p-4 px-6 lg:px-0 lg:max-w-4xl xl:max-w-5xl">
         <form
           onSubmit={handleSubmit}
-          className="p-6 rounded-xl bg-[url(/bg-shorten-mobile.svg)] lg:bg-[url(/bg-shorten-desktop.svg)] bg-slate-800 bg-no-repeat bg-top-right lg:bg-cover lg:p-16 lg:py-12 flex flex-col lg:flex-row lg:gap-6"
+          className="p-6 rounded-xl bg-[url(/bg-shorten-mobile.svg)] lg:bg-[url(/bg-shorten-desktop.svg)] bg-purple-950 bg-no-repeat bg-top-right lg:bg-cover lg:p-16 lg:py-12 flex flex-col lg:flex-row lg:gap-6"
         >
           <div className="mb-4 space-y-2 w-full lg:mb-0 lg:space-y-0 relative">
             <label htmlFor="input-url" className="sr-only">
