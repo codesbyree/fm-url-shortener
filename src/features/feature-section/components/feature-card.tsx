@@ -22,7 +22,7 @@ export default function FeatureCard(props: Props) {
       </header>
 
       <div>
-        <p className="text-gray-500 font-medium text-center leading-6 xl:text-left">{description}</p>
+        <p className="text-gray-600 font-medium text-center leading-6 xl:text-left">{description}</p>
       </div>
     </motion.article>
   );

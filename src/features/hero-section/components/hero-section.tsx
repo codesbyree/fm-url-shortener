@@ -10,7 +10,7 @@ export default function HeroSection() {
           <h1 className="font-bold text-gray-900 text-4xl text-center mb-3 lg:text-left lg:text-5xl lg:leading-14 xl:text-6xl xl:leading-17">
             More than just <br className="lg:block hidden" /> shorter links
           </h1>
-          <p className="text-gray-500 font-medium text-center mb-6 lg:text-left">
+          <p className="text-gray-600 font-medium text-center mb-6 lg:text-left">
             Build your brand's recognition and get detailed <br className="lg:block hidden" /> insights on how your links are performing.
           </p>
 
